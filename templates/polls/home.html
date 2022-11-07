@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+</head>
+<body>
+    <a href="{% url 'polls:question_list' %}">Pytanie</a>
+    <br>
+    {% if user.is_authenticated %}
+        Witam {{ user }}!
+        {% else %}
+        nie zalogowany
+
+    {% endif %}
+
+</body>
+</html>

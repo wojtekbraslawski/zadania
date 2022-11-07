@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ STATIC_URL }}/styles.css" />
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/styles.css' %}" />
+</head>
+<body>
+    <div class="mainbox infobox">
+        <h1>{{ question.question_text }}</h1>
+        <ul>
+        {% for choice in question.choice_set.all %}
+            <li><p>{{ choice.choice_text }} - {{ choice.votes }}</p></li>
+        {% endfor %}
+        {% for answer in question.answer_set.all %}
+                <li>{{ answer.user_answer }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

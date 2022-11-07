@@ -1,2 +1,1 @@
-# zadania
-zadania z www
+# WWW

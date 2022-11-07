@@ -1,0 +1,53 @@
+body{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainbox{
+    margin: 1rem;
+    padding: 0.1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+.infobox{
+    padding: 2rem;
+    padding-top: 0.5rem;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+th{
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+td{
+    background-color: whitesmoke;
+    padding: 1em;
+    border-radius: 0.25em;
+}
+
+a{
+    transition-duration: 0.4s;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+}
